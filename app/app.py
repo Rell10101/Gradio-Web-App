@@ -22,7 +22,7 @@ def on_submit(x1,x2,x3,x4,x5):
 demo = gr.Interface(
    fn = on_submit,
    inputs=["number", "number", "number", "number", "number"],
-   outputs=[gr.Number(label="y_prediction"), gr.Plot()],
+   outputs=[gr.Number(label="y_prediction"), gr.Plot(label="scatter диаграмма")],
    description = description
 )
 

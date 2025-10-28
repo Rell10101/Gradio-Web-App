@@ -13,7 +13,7 @@ for coef, feature in zip(model_load.lin_reg.coef_, feature_names):
      if coef >= 0:
           equation.append(f"+ {coef:.2f}{feature}")
      else: equation.append(f"- {abs(coef):.2f}{feature}")
-equation_LaTeX = f"$y = {' '.join(equation)}"
+equation_LaTeX = f"y = {' '.join(equation)}"
 
 
 def predict_Y(x1,x2,x3,x4,x5):
